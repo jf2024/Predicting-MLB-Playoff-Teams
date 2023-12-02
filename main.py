@@ -8,13 +8,17 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.impute import SimpleImputer
 from sklearn.metrics import accuracy_score
 
-#combine both of the files into one file 
-#no hyperparameter tuning vs hyperparameter tuning
-#get classification report for each of the models with and without hyperparameter tuning
-#finding the feature that doesn't help the model
-#abalative anayslsis --> just remove the features one at a time  (13-applying ml slide 44 for reference)
+#the below is in the rename.py file
+	#combine both of the files into one file 
+	#no hyperparameter tuning vs hyperparameter tuning
+	#abalative anayslsis --> just remove the features one at a time  (13-applying ml slide 44 for reference)
 
-#also cook up some graphs to show the difference between the models with and without hyperparameter tuning and maybe get specific teams
+#need to do the following:
+	#get classification report for each of the models with and without hyperparameter tuning
+	#finding the feature that doesn't help the model compared to the other features (ablative analysis)
+	#make some graphs to show the difference between the models with and without hyperparameter tuning (visualizations)
+		#maybe get specific teams like who made the playoffs the most times, what were the specific OOBP, SLG, etc... 
+	#get coefficients for each of the features (denali has the code for that)
 
 # Read the dataset
 df = pd.read_csv('baseball.csv')
@@ -26,6 +30,10 @@ y = df['Playoffs']
 # Split the data into training and test sets
 # 75% of the data will be used for training and 25% for testing
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
+
+# Print the number of samples in the training and testing datasets
+print("Number of samples in training set:", X_train.shape[0])
+print("Number of samples in testing set:", X_test.shape[0])
 
 # Impute missing values using mean strategy
 imputer = SimpleImputer(strategy='mean')
