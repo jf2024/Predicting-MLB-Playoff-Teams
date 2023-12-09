@@ -35,10 +35,6 @@ Seaborn is a powerful data visualization library in Python. We utilized Seaborn 
 
 Learn more about [Seaborn](https://seaborn.pydata.org/).
 
-## How to run the code
-
-Certainly! Let's expand on the user's manual section in your README:
-
 ## How to Run the Code
 
 ### Prerequisites
@@ -56,16 +52,14 @@ Follow these steps to set up the project:
    Open a terminal or command prompt and run the following command to clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/baseball-playoff-prediction.git
+   git clone https://github.com/LMU-CMSI-Korpusik/project-denali-jose-ryan.git
    ```
-
-   Replace `your-username` with your actual GitHub username.
 
 2. **Navigate to the Project Directory:**
    Change your working directory to the project folder (wherever you cloned it):
 
    ```bash
-   cd baseball-playoff-prediction
+   cd project-denali-jose-ryan
    ```
 
 3. **Install Dependencies:**
@@ -88,7 +82,7 @@ Once the installation is complete, you can run the project using the following s
    Ensure you are in the project's root directory:
 
    ```bash
-   cd path/to/baseball-playoff-prediction
+   cd path/to/project-denali-jose-ryan
    ```
 
 2. **Execute the Main Script:**
