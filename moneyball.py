@@ -292,25 +292,6 @@ def main():
         print(f"{model_name} Test Accuracy (Hyperparameter Tuning): {test_score}")
         print(f"{model_name} Classification Report:\n", classification_report(y_test, y_pred))
 
-        # Add predictions to the original DataFrame
-        df['Predicted_Playoffs'] = model.predict(X)
-
-        # Get playoff counts based on the actual dataset
-        actual_playoff_counts = df.groupby("Team")["Playoffs"].sum().reset_index(name="Actual_Playoff_Appearances")
-
-        # Get playoff counts based on the model predictions
-        predicted_playoff_counts = df.groupby("Team")["Predicted_Playoffs"].sum().reset_index(name="Predicted_Playoff_Appearances")
-
-        # Print counts
-        print("\nActual Playoff Appearances:")
-        print(actual_playoff_counts)
-
-        print("\nPredicted Playoff Appearances (Hypertuning):")
-        print(predicted_playoff_counts)
-
-        # Plot playoff counts
-        plot_playoff_counts(actual_playoff_counts, predicted_playoff_counts, model_name)
-
     print("\nAblative Analysis Results (No Hyperparameters):")
     for model_name, model in models.items():
         ablative_scores = ablative_analysis(model, X.columns, X_train, X_test, y_train, y_test)
