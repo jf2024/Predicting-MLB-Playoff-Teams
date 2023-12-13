@@ -13,7 +13,10 @@ Our objective was to see how accurately we can predict teams making the playoffs
 3) Support Vector Machines
 4) K-nearest neighbors 
 
-We tested the 4 models above in both the default values/settings provided for us and also used some hypertuning for each of the models to see if we can get an improvement in accurarcy. 
+We tested the 4 models above in both the default values/settings provided for us and also used some hypertuning for each of the models to see if we can get an improvement in accurarcy. The image below shows just one example of this with one of our models, Logistic Regression. The graph on the left shows the actual reality counts of teams making the playoffs and on the right is our model (default values) predications on those same teams. Can see a side-by-side comparison and see how our model does. 
+
+<img width="899" alt="image" src="https://github.com/jf2024/Predicting-MLB-Playoff-Teams/assets/65199388/b9c0f2ab-f4fe-49ad-8b3a-86f3f60df9be">
+
 
 ## Some Libraries that helped us
 
@@ -95,7 +98,7 @@ Once the installation is complete, you can run the project using the following s
    This command initiates the analysis, training of machine learning models, and generates predictions based on the provided baseball dataset. 
 
 3. **View Results:**
-   Once the script completes, check the terminal for output logs, including model accuracy, hyperparameter tuning results, and ablative analysis. Additionally, visualizations, such as bar plots and feature importance plots, will be displayed. You will notice about 4 graphs that will pop out on your screen. The graph on the left is the actual playoff count for each team and the one on the right is our model's (the default one, not the hyperparameter) predication counts for each baseball team. You will also notice different coefficient reports for each of the models for both the default values and hypertuning values.
+   Once the script completes, check the terminal for output logs, including model accuracy, hyperparameter tuning results, and ablative analysis. Additionally, visualizations, such as bar plots and feature importance plots, will be displayed. You will notice about 4 graphs that will pop out on your screen (like the one from above). The graph on the left is the actual playoff count for each team and the one on the right is our model's (the default one, not the hyperparameter) predication counts for each baseball team. You will also notice different coefficient reports for each of the models for both the default values and hypertuning values.
 
    Additionally, give the script some time to run everything, it might take a couple of minutes and if it does seem like its stuck, just press the 'enter' key and it should just go. 
 
