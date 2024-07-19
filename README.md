@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is the final project for CMSI 5350 - Machine Learning, developed by Jose and Denali. The project focuses on baseball data between the years 1962 - 2012. Some of the baseball statistics that we have access to with our basebabll.csv dataset are the following: Runs Scored (RS), Runs Against (RA), On-base-percentage (OBP), Slugging (SLG), Batting Average (BA), Opponents Slugging (OSLG), and Opponents On-base-percentage (OOBP).
+This is the final project for CMSI 5350 - Machine Learning, developed by Jose and Denali. The project focuses on baseball data between the years 1962 - 2012. Some of the baseball statistics that we have access to with our baseball.csv dataset are the following: Runs Scored (RS), Runs Against (RA), On-base-percentage (OBP), Slugging (SLG), Batting Average (BA), Opponents Slugging (OSLG), and Opponents On-base-percentage (OOBP).
 
 ## Project Objective
 
